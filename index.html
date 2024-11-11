@@ -9,25 +9,48 @@
 </head>
 
 <body>
-  <h1>Emoji Zoo</h1>
-	<h4>Using <a href="https://coderina.dev/webdocs/docs/unit02/notes201.html">CSS Flexbox</a> Layout</h4>
+	<h1>Advanced Flexible Layouts</h1>
+	<h3>See <a href="https://coderina.dev/webdocs/docs/unit02/notes201.html">CSS Flexbox</a> Notes</h3>
 
-	<div class="flex-container">
-		<div id="item1" class="flex-item">🦒</div>
-		<div id="item2" class="flex-item">🐅</div>
-		<div id="item3" class="flex-item">🐒</div>
-		<div id="item4" class="flex-item">🐘</div>
-		<div id="item5" class="flex-item">🐊</div>
-		<div id="item6" class="flex-item">🦓</div>
+	<!-- Section 1: Basic Flex Container with a few items -->
+	<div class="section">
+		<h2>Section 1: Simple Flex Container</h2>
+		<div id="flex-container-1">
+			<div class="flex-item-1">Item A</div>
+			<div class="flex-item-1">Item B</div>
+			<div class="flex-item-1">Item C</div>
+		</div>
 	</div>
-
-  <br>
-
-  <p><strong>NOTE:</strong> Look closely at the CSS code in the style.css file! Focus on the various FLEXBOX PROPERTIES. Observe how each Flexbox property affects the LAYOUT and POSITION of the Flex Items inside the Flex Container.</p> 
-
-  <p><strong>HINT:</strong> First, some general styling rules are applied to all flex items using the CLASS selectors. Then, individual flex items are selected by ID, to each demonstrate a different Flexbox property.</p>
-
-
+	
+	<!-- Section 2: Column with a nested row -->
+	<div class="section">
+		<h2>Section 2: Column Layout with Nested Row</h2>
+		<div id="flex-container-2">
+			<div class="flex-row-2">
+				<div class="flex-item-2">Sub-Item A</div>
+				<div class="flex-item-2">Sub-Item B</div>
+			</div>
+			<div class="flex-item-2">Item C</div>
+		</div>
+	</div>
+	
+	<!-- Section 3: More Complex Layout -->
+	<div class="section">
+		<h2>Section 3: More Complex Flex Layout</h2>
+		<div id="flex-container-3">
+			<div class="flex-col-3">
+				<div class="flex-item-3">Column Item A</div>
+				<div class="flex-item-3">Column Item B</div>
+			</div>
+			<div class="flex-col-3">
+				<div class="flex-item-3">Column Item C</div>
+				<div class="flex-row-3">
+					<div class="flex-item-3">Row Sub-Item D</div>
+					<div class="flex-item-3">Row Sub-Item E</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
